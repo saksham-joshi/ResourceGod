@@ -1,0 +1,147 @@
+/* body{
+    background-image:linear-gradient(to bottom,red,blue 50% );
+}
+
+form{
+    width:420px;
+    height: 95%;
+    margin:5.3%;
+    position: relative;
+    background-color:rgba(169, 169, 169,0.7);
+    border-radius:20px;
+    vertical-align: center;
+}
+img{
+    width:50%;
+    height: 33%;
+    aspect-ratio: 1;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    font-weight: bolder;
+    color:black;
+    margin-top:2%;
+    color:white;
+}
+input{
+    background-color: white;
+    border-radius: 90px;
+    border-color:aqua;
+    width: 70%;
+    height: 8%;
+    text-align:center; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    font-weight: bold;
+}
+input::placeholder  {
+    color:black;
+}
+#mail{
+    margin-top:5%;
+}
+#pass{
+    margin-top:2%;
+}
+button{
+    border-radius:4px;
+    border-color:aqua;
+    width:25%;
+    height:6%;
+    margin:2%;
+    box-shadow: 40px;
+    font-weight:bolder;
+    font-size:large;
+    background-color:rgb(0, 191, 255);
+    color:black;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(17, 17, 141);
+    color:white;
+}
+button:active{
+    background-color:white;
+    color:rgb(17, 17, 141);
+}
+p{
+    color:rgb(250, 233, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 90%;
+} */
+
+body{
+    background-image:linear-gradient(to bottom,red,blue);
+}
+
+form{
+    min-width:360px;
+    max-width:420px;
+    position: relative;
+    background-color:rgba(169, 169, 169,0.7);
+    border-radius:20px;
+    vertical-align: center;
+    margin-top:5%;
+}
+img{
+    width:50%;
+    /*height: 33%;*/
+    aspect-ratio: 1;
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large;
+    font-weight: bolder;
+    color:black;
+    margin-top:2%;
+    color:white;
+}
+input{
+    background-color: white;
+    border-radius: 90px;
+    border-color:aqua;
+    width: 70%;
+    height: 8%;
+    text-align:center; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    font-weight: bold;
+}
+input::placeholder  {
+    color:black;
+}
+#mail{
+    margin-top:5%;
+}
+#pass{
+    margin-top:2%;
+}
+button{
+    border-radius:4px;
+    border-color:aqua;
+    width:25%;
+    height:6%;
+    margin:2%;
+    box-shadow: 40px;
+    font-weight:bolder;
+    font-size:large;
+    background-color:rgb(0, 191, 255);
+    color:black;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(17, 17, 141);
+    color:white;
+}
+button:active{
+    background-color:white;
+    color:rgb(17, 17, 141);
+}
+p{
+    color:rgb(250, 233, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    font-size: 90%;
+}

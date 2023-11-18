@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>ResourceGod</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="keywords" content="resource god, resource, free resource, free course, free content download, ResourceGod, resource-god.netlify.app, resource-god.com, resouce-god.in, resourcegod.com, resourcegod.in, free course download">
+    <meta name="description" content="Resource-God is a platform to get free courses, study materials, notes, documents quickly.">
+    <meta name="author" content="Saksham Joshi">
+    <style>
+        @font-face {
+            font-family: ardela_edge_x01;
+            src: url("./CSS/Fonts/ARDELA\ EDGE\ X01\ Black.ttf");
+        }
+        @font-face {
+            font-family: helvetica_otf;
+            src: url("./CSS/Fonts/helvetica-rounded-bold-5871d05ead8de.otf");
+        }
+        @font-face {
+            font-family: ackno;
+            src: url("./CSS/Fonts/ACKNO.TTF");
+        }
+        @font-face {
+            font-family: berlin_sans;
+            src: url("./CSS/Fonts/BRLNSR.TTF");
+        }
+        @font-face {
+            font-family: verdana_;
+            src: url("./CSS/Fonts/verdana.ttf");
+        }
+        body{
+            background-image: linear-gradient(to top, #238b8b 0%, #2c075a 100%);
+        }
+    </style>
+    <link rel="icon" href="./CSS/Images/top_icon.png">
+
+    <link rel="stylesheet" media="(max-width:1050px)" href="./CSS/index_mobile.css">
+    <!-- <link rel="stylesheet" media="(min-width:1110px)" href="./CSS/index_tab.css"> -->
+    <link rel="stylesheet" media="(min-width:1051px)" href="./CSS/index_desktop.css">
+
+    <script src="./JS/index.js"></script>
+</head>
+
+<body>
+    <!-- Top/Navigation bar for Mobiles -->
+    <div id="topbar_mobile">
+        <div id="sidebar">
+            <br>
+                <img id="logo" src="./CSS/Images/top_icon.png" alt="Logo">
+                <br/> <br>
+                <a href="#credits_and_info"> <button id="about_button">ABOUT</button> </a>
+                <br/>
+                <a href="./register_page.html"> <button id="register_button">REGISTER</button> </a>
+                <br/>
+                <a href="./login_page.html"> <button id="login_button">LOGIN</button> </a>
+                <br/>
+                <a href="./upload_forum.html"> <button id="upload_button">UploadForum</button> </a>
+                <br/>
+                <a href="./request_forum.html"> <button id="request_button"> RequestForum </button> </a>
+                <br>
+                <br>
+                <button id="cross_button" onclick="sidebar_close()">
+                    <img src="./CSS/Images/cross_button.png" alt="x">
+                </button> 
+        </div>
+        <div id="top_title_and_logo">
+            <button id="top_logo" onclick="sidebar_open()">
+                <img src="./CSS/Images/top_icon.png" alt="icon">
+            </button>
+            <center>
+                <span id="top_title" >&nbspRESOURCE-GOD</span>
+            </center>
+            
+        </div>
+    </div>
+
+    <!-- Ends here topbar for mobile -->
+
+    <!-- Top/Navigation bar for desktop  -->
+    <div id="topbar_desktop">
+        <div id="top_title_and_logo">
+            <img id="top_logo" src="./CSS/Images/top_icon.png" alt="Logo">
+            <span id="top_title" > RESOURCE-GOD</span>
+        </div>
+        <div id="top_links">
+                <a href="#credits_and_info"> <button id="about_button">ABOUT</button> </a> 
+                
+                <a href="./register_page.html"> <button id="register_button">REGISTER</button> </a>
+                
+                <a href="./login_page.html"> <button id="login_button">LOGIN</button> </a>
+                
+                <a href="./upload_forum.html"> <button id="upload_button">UploadForum</button> </a> 
+                
+                <a href="./request_forum.html"> <button id="request_button">RequestForum</button></a>
+        </div>
+    </div>
+    <!-- Ends here topbar for desktop -->
+    <br>
+    <br>
+    <center>
+        <div id="search_area">
+            
+            <input type="text" id="search_box" oninput="search_box_text_changed()" placeholder="Search Resources">
+            <!-- <button id="search_button"><img src="./CSS/Images/search-button.png" alt="search"></button> -->
+            <button id="search_button">⫸</button>
+        </div>
+        <div id="content_section">
+
+        </div>
+    </center>
+        <div id="credits_and_info">
+            <br>
+            <div id="credit_heading"> ⩥ About : </div>
+            <div id="about_rg">
+                Resource-God is a website which helps you to get links of resources like study materials, courses, notes, tutorials etc. within a second. Also, none of your data is stored on the server which makes it more secure and anonymous.
+            </div>
+            <br>
+            <div id="credit_heading"> ⩥ Tools used :</div>
+            <ul>
+                <li>&nbsp NodeJS.</li>
+                <li>&nbsp HTML.</li>
+                <li>&nbsp CSS.</li>
+                <li>&nbsp Javascript.</li>
+                <li>&nbsp Microsoft VS Code.</li>
+            </ul>
+            <div id="credit_heading"> ⩥ Developer Info : </div>
+            <ul>
+                <li>&nbsp Name: SAKSHAM JOSHI </li>
+                <li>&nbsp <a href="https://sakshamjoshi.netlify.app/"> Portfolio </a> </li>
+                <li>&nbsp <a href="https://www.linkedin.com/in/sakshamjoshi27"> Linkedin </a> </li>
+                <li>&nbsp <a href="https://github.com/saksham-joshi"> GitHub </a> </li>
+                <li>&nbsp <a href="https://twitter.com/sakshamjoshi27/"> X(Twitter) </a> </li>
+            </ul>
+        </div>
+        <br>
+        <span id="screen-width" style="color:white">Screen Size= </span>
+
+    
+</body>
+
+</html>

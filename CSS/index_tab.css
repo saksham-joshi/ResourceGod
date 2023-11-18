@@ -1,0 +1,181 @@
+
+#top_title_and_logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_logo{
+    background-color: transparent;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_logo img{
+    width:80;
+    border-radius: 180px;
+    border:0.5px solid rgb(0, 187, 187);
+    box-shadow:  cyan 0px 0px 3.5px 1.5px  ;
+    cursor: pointer;
+}
+
+#top_logo:hover img{
+    width:70;
+    box-shadow:  cyan 0px 0px 2px 0.8px  ;
+}
+
+#top_title{
+    font-family: ardela_edge_x01;
+    font-size:250%;
+    font-weight: bold;
+    margin-left: auto;
+    color:white;
+    letter-spacing: 3px;
+}
+
+#sidebar{
+    position:fixed;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:40%;
+    height: 100%;
+    background-color: #2a2a67f9;
+    margin-left:-10px;
+    top:0;
+    overflow-y: scroll;
+}
+#sidebar #logo{
+    /* width:50%; */
+    width:calc(100vw/5);
+}
+#sidebar a{
+    width: 100%;
+    cursor: pointer;
+}
+#sidebar a button{
+    text-decoration: none;
+    font-family:helvetica_otf;
+    font-weight: bold;
+    font-size:large;
+    color:white;
+    background-color: transparent;
+    border-left: none;
+    border-top:none;
+    border-right:none;
+    padding-bottom:10px;
+    cursor: pointer;
+}
+#sidebar a button:nth-child(1){
+    width:100%;
+    cursor: pointer;
+}
+#sidebar #cross_button{
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#sidebar #cross_button img{
+    width:20%;
+}
+
+#search_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px -5px cyan;
+}
+
+#search_box{
+    width:60%;
+    height: 53px;
+    background-color: #2c075a88;
+    color:aliceblue;
+    border:none;
+    border-bottom:2px solid rgb(0, 113, 114);
+    border-radius:8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right:none ;
+    text-align:center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size:larger;
+    /* box-shadow: aqua 0px 50px 100px -20px, aqua 0px 30px 60px -30px, aqua 0px 1px 3px 0px; */
+}
+
+#search_box::placeholder {
+    color:rgb(219, 219, 219);
+    opacity: 1;
+}
+#search_box:focus, #search_box:hover {
+    border-bottom:2px solid aqua;
+    outline:none;
+}
+#search_box:focus, #search_box:hover + #search_button{
+    border-bottom:2px solid aqua;
+}
+
+#search_button {
+    height: 53px;
+    width:10%;
+    background-color: #2c075a88;
+    color:rgb(219, 219, 219);
+    border:none;
+    border-bottom:2px solid rgb(0, 113, 114);
+    border-radius: 8px;;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left:none;
+    vertical-align:middle;
+    font-size:x-large;
+}
+#search_button:hover {
+    color:white;
+    border-bottom:2px solid aqua;
+}
+#search_button:active{
+    border-bottom:2px solid aqua;
+}
+
+#credits_and_info{
+    bottom:0;
+    background-color: rgb(13, 5, 100);
+    width:68%;
+    padding:4px;
+    border-radius: 15px;
+    margin-top:6%;
+    font-size:medium;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#credits_and_info ul{
+    font-family: berlin_sans;
+}
+#credits_and_info ul li{
+    list-style-type: "»|";
+    color:whitesmoke
+}
+
+#credits_and_info ul li, #credits_and_info ul li a, #about_rg{
+    color:wheat;
+    font-family: verdana_;
+    font-weight: bold;
+}
+#credits_and_info ul li a:hover{
+    color:aqua;
+}
+
+#credit_heading{
+    font-family: ackno;
+    color:white; 
+    font-size:large; 
+    margin-bottom:2%;
+}
+
+#topbar_desktop{
+    display: none !important;
+}

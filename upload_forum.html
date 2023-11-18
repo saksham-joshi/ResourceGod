@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Upload Forum</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="icon" href="top_icon.png">
+    <link rel="stylesheet" href="./CSS/upload_forum.css">
+    <script type="text/javascript" src="./JS/upload_forum.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1> Resource God</h1>
+        <a href="./index.html">
+            <img src="./CSS/Images/icon_circle.png" alt="logo">
+        </a>
+        <h2>Upload Forum</h2>
+        <hr>
+        <form>
+            <input id="title" type="text" placeholder="Title(more than 10 & less than 40 characters)" required>
+            <br>
+            <input id="link" type="url" placeholder="Valid Link" required>
+            <br>
+            <textarea id="description" placeholder="Description(max.100 words)" required></textarea>
+            <button id="request_submit" onclick="adding_resource()" >Submit</button>
+        </form>
+    </center>
+
+</body>
+
+</html>
