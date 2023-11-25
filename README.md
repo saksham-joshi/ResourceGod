@@ -23,5 +23,5 @@ Resource-God is a website which helps you to get links of resources like study m
 8. upload_forum.html : this file contains the interface from where users can upload resource and contribute to resource god.
 
 ## NOTE :
-If you have any suggestion about the improvement of UI of Resource God, Please let me know ... We will be thankful to you!
+If you have any suggestion about the improvement of UI of Resource God, Please let me know ... I will be thankful to you!
     
