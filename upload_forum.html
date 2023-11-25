@@ -6,24 +6,73 @@
     <link rel="icon" href="top_icon.png">
     <link rel="stylesheet" href="./CSS/upload_forum.css">
     <script type="text/javascript" src="./JS/upload_forum.js"></script>
+    <style>
+        @font-face {
+            font-family: ardela_edge_x01;
+            src: url("./CSS/Fonts/ARDELA\ EDGE\ X01\ Black.ttf");
+        }
+
+        @font-face {
+            font-family: verdana_;
+            src: url("./CSS/Fonts/verdana.ttf");
+        }
+
+        @font-face {
+            font-family: berlin_sans;
+            src: url("./CSS/Fonts/BRLNSR.TTF");
+        }
+
+        body {
+            background-image: linear-gradient(to top, #238b8b 0%, #2c075a 100%);
+        }
+
+        h1 {
+            color: white;
+            font-family: ardela_edge_x01;
+            font-size: 350%;
+            font-weight: bolder;
+            letter-spacing: 2.5px;
+        }
+
+        img {
+            height: 25%;
+        }
+
+        h2 {
+            color: white;
+            
+            font-family: berlin_sans;
+            font-weight: bolder;
+            font-size:xx-large;
+            letter-spacing: 1px;
+        }
+
+        #about_upload_forum {
+            color: white;
+            font-family: verdana_;
+            font-size: smaller;
+
+        }
+        hr {
+            background-color: white;
+        }
+    </style>
 </head>
 
 <body>
     <center>
         <h1> Resource God</h1>
         <a href="./index.html">
-            <img src="./CSS/Images/icon_circle.png" alt="logo">
+            <img src="./CSS/Images/top_icon.png" alt="logo">
         </a>
         <h2>Upload Forum</h2>
-        <hr>
-        <form>
-            <input id="title" type="text" placeholder="Title(more than 10 & less than 40 characters)" required>
-            <br>
-            <input id="link" type="url" placeholder="Valid Link" required>
-            <br>
-            <textarea id="description" placeholder="Description(max.100 words)" required></textarea>
-            <button id="request_submit" onclick="adding_resource()" >Submit</button>
-        </form>
+        
+
+        <div id="about_upload_forum">
+            You can contribute to <a style="font-weight: bold;color:white" href="./index.html">Resource-God</a> by providing access to resources links. This feature will be provided very soon.
+        </div>
+        <hr style="margin-top: 15px;margin-bottom: 15px">
+    
     </center>
 
 </body>

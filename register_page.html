@@ -1,36 +1,197 @@
 <html>
-    <head>
-        <title> Register-Resource God</title>
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="icon" href="top_icon.png">
-        <link rel="stylesheet" href="./CSS/register_page.css">
-        <script type="text/javascript" src="./JS/register_page.js"></script>
-        <style>
-            
-        </style>
-    </head>
-    <body>
-        <center>
-            <form method="post">
-                <img src="./CSS/Images/icon_circle.png" alt="logo">
-                <br><br>
-                <h1> Register to Resource God </h1>
-                <input id="name" placeholder="First Name" required>
-                <input id="name" placeholder="Last Name" required>
-                <br><br>
-                <input type="email" placeholder="Email" required>
+
+<head>
+    <title> Register-Resource God</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="icon" href="top_icon.png">
+    <link rel="stylesheet" href="./CSS/register_page.css">
+    <script type="text/javascript" src="./JS/register_page.js"></script>
+    <style>
+        @font-face {
+            font-family: verdana_;
+            src: url("./CSS/Fonts/verdana.ttf");
+        }
+
+        body {
+            background-image: linear-gradient(to top, #238b8b 0%, #2c075a 100%);
+        }
+
+        form {
+            width: 90vw;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+
+
+        #flex_div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -10px;
+        }
+
+        form img {
+            margin-top: 2%;
+            width: 80%;
+            aspect-ratio: 1;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+        }
+
+        input {
+            border-radius: 15px;
+            border-color: aqua;
+            text-align: center;
+            width: 93%;
+            height: 50px;
+            margin: 8px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        input::placeholder {
+            color: black;
+        }
+
+        input:hover {
+            background-color: rgb(232, 236, 240);
+        }
+
+        div #username {
+            width: 45%;
+            margin-bottom: 0px;
+        }
+
+        #email {
+            margin-top: 0px;
+        }
+
+        #privacy_policy_checkbox {
+            width: 4.5vw;
+            height: 4.5vw;
+
+        }
+
+        #privacy_policy_span {
+            font-family: verdana_;
+            font-weight: bold;
+            letter-spacing: -1px;
+            word-spacing: 0px;
+            color: white;
+        }
+
+        span {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: justify;
+        }
+
+        button {
+            border-radius: 5px;
+            border: 1.5px solid black;
+            background-color: #008080;
+            color: white;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: x-large;
+            font-weight: 600;
+            padding-left: 6vw;
+            padding-right: 6vw;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        button:active {
+            background-color: cyan;
+            color: black;
+        }
+
+        #already_account {
+            font-family: tahoma;
+            font-weight: bolder;
+            color: rgb(71, 0, 0);
+            margin-top: 30px;
+
+        }
+
+        @media (min-width:600px) {
+            form {
+                width: 60%;
+            }
+
+            form img {
+                width: 40%;
+            }
+
+            #username,
+            #email,
+            #pass,
+            #retype_pass {
+                height: 60px;
+            }
+
+            #privacy_policy_checkbox {
+                width: 15px;
+                height: 15px;
+
+            }
+
+            #privacy_policy_span {
+                font-family: verdana_;
+                font-weight: bold;
+                /* letter-spacing:1px;
+                word-spacing: 1px; */
+                color: white;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form method="post">
+            <br>
+            <img src="./CSS/Images/top_icon.png" alt="logo">
+
+            <br><br>
+
+            <h1> Register to Resource God </h1>
+            <div id="flex_div">
+                <input id="username" placeholder="First Name" required>
+                <input id="username" placeholder="Last Name" required>
+            </div>
+
+            <br><br>
+            <input id="email" type="email" placeholder="Email" required>
+            <br>
+            <input id="pass" type="password" placeholder="Password" required>
+            <br>
+            <input id="retype_pass" id="password" type="password" placeholder="Retype Password" required>
+            <br><br>
+            <div id="flex_div">
+                <input id="privacy_policy_checkbox" type="checkbox" required>
+                <span id="privacy_policy_span"> *You agree to our <a href="./privacy_policy.html"> privacy
+                        policy.</a> </span>
+            </div>
+
+            <br>
+            <button type="submit" onclick="register_pressed()">Register</button>
+            <br>
+            <span id="already_account"> Already have an Account? <a href="./login_page.html"> Login here </a> </p>
                 <br>
-                <input type="password" placeholder="Password" required>
-                <br>
-                <input type="password" placeholder="Retype Password" required>
-                <br><br>
-                <input id="checkbox" type="checkbox" required>
-                <span> *Your agree to all of our <a href="./privacy_policy.html"> privacy policies.</a> </span>
-                <br>
-                <button onclick="register_pressed()" > Register </button>
-                <br>
-                <p> Already have an Account? <a href="./login_page.html" > Login here </a> </p>
-            </form>
-        </center>
-    </body>
+        </form>
+    </center>
+</body>
+
 </html>

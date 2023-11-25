@@ -1,23 +1,168 @@
 <html>
-    <head>
-        <title>Submit Forum</title>
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
-        <link rel="stylesheet" href="./CSS/request_forum.css">
-        <script type="text/javascript" src="./JS/request_forum.js"></script>
-        <link rel="icon" href="./CSS/Images/icon_circle.png">
-    </head>
-    <body>
-        <center>
+
+<head>
+    <title>Submit Forum</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <script type="text/javascript" src="./JS/request_forum.js"></script>
+    <link rel="icon" href="./CSS/Images/top_icon.png">
+    <style>
+        @font-face {
+            font-family: ardela_edge_x01;
+            src: url("./CSS/Fonts/ARDELA\ EDGE\ X01\ Black.ttf");
+        }
+
+        @font-face {
+            font-family: verdana_;
+            src: url("./CSS/Fonts/verdana.ttf");
+        }
+
+        @font-face {
+            font-family: berlin_sans;
+            src: url("./CSS/Fonts/BRLNSR.TTF");
+        }
+
+        body {
+            background-image: linear-gradient(to top, #238b8b 0%, #2c075a 100%);
+        }
+
+        h1 {
+            color: white;
+            font-family: ardela_edge_x01;
+            font-size: 350%;
+            font-weight: bolder;
+            letter-spacing: 2.5px;
+        }
+
+        img {
+            height: 50vw;
+        }
+        @media (min-width:768px) {
+            img{
+                height:20vw;
+            }
+        }
+
+        h2 {
+            color: white;
+            
+            font-family: berlin_sans;
+            font-weight: bolder;
+            font-size:xx-large;
+            letter-spacing: 1px;
+        }
+
+        hr {
+            background-color: white;
+        }
+
+        #title,
+        #description {  
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            text-align: center;
+            font-family: helvetica;
+            font-weight: bolder;
+            font-size: large;
+            border:2.5px solid #2c075a;
+            border-radius: 10px;
+            min-width: 250px;
+            width: 50vw;
+            height:80px;
+        }
+        #description{
+            height:150px;
+        }
+
+        #title:hover, #title:active{
+            height:80px;
+        }
+        #description:hover, #description:active{
+            height:150px;
+        }
+
+        @media (max-width:600px) {
+
+            #title,
+            #description {
+                width: 95%;
+            }
+        }
+
+        #about_request_forum {
+            color: white;
+            font-family: verdana_;
+            font-size: smaller;
+
+        }
+
+        #title {
+            height: 8%;
+        }
+
+        #description {
+            height: 16%;
+        }
+
+        #submit_btn {
+            
+            background-image: linear-gradient(92.88deg, #3d59c0 9.16%, #5b46e3 43.89%, #6e42e9 64.72%);
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            flex-shrink: 0;
+            font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            height: 4rem;
+            padding: 0 0.5rem;
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+            transition: all .5s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        #submit_btn:hover {
+            box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+            transition-duration: .1s;
+        }
+
+        @media (min-width: 768px) {
+            .button-36 {
+                padding: 0 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <span>
             <h1>Resource God</h1>
-            <img src="./CSS/Images/icon_circle.png" alt="icon">
-            <h2>Submit Request</h2>
-            <hr>
-            <label></label>
-            <input id="title" type="text" placeholder="Title" required>
-            <br>
-            <textarea id="description" placeholder="Description"></textarea>
-            <br>
-            <button type="submit" onclick="request_received()">Submit</button>
-        </center>
-    </body>
+        </span>
+        <a href="./index.html">
+            <img src="./CSS/Images/top_icon.png" alt="icon">
+        </a>
+        
+        <h2>Submit Request</h2>
+        <div id="about_request_forum">
+            You can submit your request for a resource like notes, tutorials, courses and other study materials.
+            Just enter the title of the resource and a small description. We will add it within 1-2 days.
+        </div>
+
+        <hr style="margin-top: 15px;margin-bottom: 15px">
+
+        <input id="title" type="text" placeholder="Title" required>
+        <br>
+        <textarea id="description" placeholder="Description"></textarea>
+        <br>
+        <button id="submit_btn" type="submit" onclick="request_received()">Submit</button>
+    </center>
+</body>
+
 </html>
